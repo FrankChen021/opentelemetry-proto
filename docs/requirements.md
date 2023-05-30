@@ -3,7 +3,7 @@ linkTitle: Requirements
 aliases:
   - /docs/reference/specification/protocol/requirements
   - /docs/specs/otel/protocol/requirements
-spelling: cSpell:ignore backpressure dealocations otel reconnections
+spelling: cSpell:ignore backpressure otel reconnections
 --->
 
 # OpenTelemetry Protocol Requirements
@@ -92,7 +92,7 @@ Ideally it must also support very fast pass-through mode (when no modifications 
 
 The protocol must impose minimal pressure on memory manager, including pass-through scenarios, when deserialized data is short-lived and must be serialized as-is shortly after and when such short-lived data is created and discarded at high frequency (think telemetry data forwarders).
 
-The implementation of telemetry protocol must aim to minimize the number of memory allocations and dealocations performed during serialization and deserialization and aim to minimize the pressure on Garbage Collection (for GC languages).
+The implementation of telemetry protocol must aim to minimize the number of memory allocations and deallocations performed during serialization and deserialization and aim to minimize the pressure on Garbage Collection (for GC languages).
 
 ### Level 7 Load Balancer Friendly
 
