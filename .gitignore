@@ -7,6 +7,7 @@
 .classpath
 .project
 .settings/
+target/
 
 # OS X
 .DS_Store
